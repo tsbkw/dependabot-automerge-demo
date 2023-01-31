@@ -9,7 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "10:00"
+      time: "10:09"
       timezone: "Asia/Tokyo"
     labels:
       "dependabot"
