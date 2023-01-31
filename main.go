@@ -4,7 +4,7 @@ import (
 	// All modules here are choosen because of it simplicity (few dependencies) and existence of patch version
 	"github.com/google/uuid"
 	"github.com/hashicorp/go-version"
-	"google.golang.org/grpc/balancer/grpclb/grpclbstate"
+	"google.golang.org/grpc/balancer/grpclb/state"
 	"google.golang.org/grpc/resolver"
 )
 
@@ -13,7 +13,7 @@ func main() {
 	// Note: 
 	//  As grpc revert changing module name `state` to `grpclbstate` in patch version v1.52.1,
 	//  code below cannot be built when using module greater than v1.52.1
-	grpclbstate.Get(resolver.State{})
+	state.Get(resolver.State{})
 
 
 	// Module for testing auto merge works

@@ -1,4 +1,4 @@
-name: build
+name: build and test
 
 on:
   pull_request:
@@ -12,3 +12,6 @@ jobs:
         
       - name: go build
         run: go build       
+
+      - name: go test
+        run: go test ./...
