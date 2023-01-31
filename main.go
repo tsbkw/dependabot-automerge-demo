@@ -21,4 +21,6 @@ func main() {
 
 	// Module for testing skip auto merge for specific module works
 	version.NewVersion("1.1")
+
+	// manually change for trigger workflow on pull request.
 }
