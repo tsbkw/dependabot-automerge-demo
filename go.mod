@@ -3,7 +3,7 @@ module github.com/tsbkw/dependabot-automerge-demo
 go 1.19
 
 require (
-	github.com/google/uuid v1.3.0
+	github.com/google/uuid v1.3.1
 	github.com/hashicorp/go-version v1.2.0
 	google.golang.org/grpc v1.52.1
 )
